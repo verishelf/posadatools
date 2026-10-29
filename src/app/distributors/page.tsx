@@ -22,9 +22,18 @@ export default function DistributorsPage() {
             <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl lg:text-6xl font-bold uppercase tracking-tight text-white leading-[0.95] mb-6">
               Become a<br />Distributor
             </h1>
-            <p className="text-lg text-metallic max-w-xl leading-relaxed">
+            <p className="text-lg text-metallic max-w-xl leading-relaxed mb-8">
               Join the POSADA TOOLS network. We work with serious partners who
               understand professional tools and the people who use them.
+            </p>
+            <p className="text-sm text-muted">
+              Already a partner?{" "}
+              <Link
+                href="/distributors/dashboard"
+                className="text-white underline underline-offset-4 hover:text-metallic transition-colors"
+              >
+                Sign in to the Distributor Portal
+              </Link>
             </p>
           </div>
         </div>
@@ -172,7 +181,10 @@ export default function DistributorsPage() {
       <section className="py-12 bg-charcoal border-t border-border">
         <div className="mx-auto max-w-7xl px-4 flex flex-col sm:flex-row items-center justify-between gap-6">
           <p className="text-sm text-muted">
-            Prefer to email directly? Reach us through the contact page.
+            Already a distributor?{" "}
+            <Link href="/distributors/dashboard" className="text-white underline underline-offset-4 hover:text-metallic">
+              Access the portal
+            </Link>
           </p>
           <Link href="/contact">
             <Button variant="outline" size="sm">
