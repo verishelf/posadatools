@@ -7,10 +7,15 @@ const shopLinks = [
   { href: "/collections/accessories", label: "Accessories" },
 ];
 
+const companyLinks = [
+  { href: "/about", label: "About Us" },
+  { href: "/distributors", label: "Become a Distributor" },
+  { href: "/contact", label: "Contact" },
+];
+
 const supportLinks = [
   { href: "/shipping-returns", label: "Shipping & Returns" },
   { href: "/warranty", label: "Warranty" },
-  { href: "/contact", label: "Contact" },
 ];
 
 const legalLinks = [
@@ -62,12 +67,22 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Support */}
+          {/* Company */}
           <div>
             <h3 className="text-xs font-bold uppercase tracking-[0.15em] text-white mb-4">
-              Support
+              Company
             </h3>
             <ul className="space-y-2">
+              {companyLinks.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-sm text-muted hover:text-white transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
               {supportLinks.map((link) => (
                 <li key={link.href}>
                   <Link
@@ -78,14 +93,6 @@ export function Footer() {
                   </Link>
                 </li>
               ))}
-              <li>
-                <Link
-                  href="/about"
-                  className="text-sm text-muted hover:text-white transition-colors"
-                >
-                  About Us
-                </Link>
-              </li>
             </ul>
           </div>
 
