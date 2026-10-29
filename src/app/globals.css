@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+:root {
+  /* POSADA TOOLS Brand Colors */
+  --color-black: #080808;
+  --color-charcoal: #151515;
+  --color-metallic: #C5C7CA;
+  --color-white: #FFFFFF;
+  --color-red: #E10613;
+  --color-muted: #8A8D91;
+  --color-border: #2A2A2A;
+  --color-card: #1A1A1A;
+
+  --background: #080808;
+  --foreground: #FFFFFF;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-black: var(--color-black);
+  --color-charcoal: var(--color-charcoal);
+  --color-metallic: var(--color-metallic);
+  --color-white: var(--color-white);
+  --color-red: var(--color-red);
+  --color-muted: var(--color-muted);
+  --color-border: var(--color-border);
+  --color-card: var(--color-card);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-display: var(--font-display);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Focus states for accessibility */
+:focus-visible {
+  outline: 2px solid var(--color-red);
+  outline-offset: 2px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-charcoal);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 0;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-muted);
+}
+
+/* Utility classes */
+.text-balance {
+  text-wrap: balance;
+}
+
+.uppercase-tracking {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
