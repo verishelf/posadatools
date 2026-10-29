@@ -1,4 +1,4 @@
-import { Product } from "@/types/product";
+import { Product, ProductCategory } from "@/types/product";
 
 /**
  * DEMO CATALOG
