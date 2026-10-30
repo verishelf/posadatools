@@ -9,7 +9,10 @@ const shopLinks = [
 
 const companyLinks = [
   { href: "/about", label: "About Us" },
-  { href: "/distributors", label: "Become a Distributor" },
+  { href: "/distributors", label: "Distributors" },
+  { href: "/suppliers", label: "Suppliers" },
+  { href: "/partners", label: "Partners" },
+  { href: "/sponsors", label: "Sponsors" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -28,7 +31,6 @@ export function Footer() {
     <footer className="bg-charcoal border-t border-border">
       <div className="mx-auto max-w-7xl px-4 py-16">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
-          {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <div className="flex h-9 w-9 items-center justify-center border border-metallic/40 bg-black">
@@ -48,7 +50,6 @@ export function Footer() {
             </p>
           </div>
 
-          {/* Shop */}
           <div>
             <h3 className="text-xs font-bold uppercase tracking-[0.15em] text-white mb-4">
               Shop
@@ -67,7 +68,6 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Company */}
           <div>
             <h3 className="text-xs font-bold uppercase tracking-[0.15em] text-white mb-4">
               Company
@@ -96,7 +96,6 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Legal */}
           <div>
             <h3 className="text-xs font-bold uppercase tracking-[0.15em] text-white mb-4">
               Legal
