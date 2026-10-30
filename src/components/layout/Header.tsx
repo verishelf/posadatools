@@ -21,7 +21,6 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-black border-b border-border">
-      {/* Announcement bar */}
       <div className="bg-black border-b border-red/30">
         <div className="mx-auto max-w-7xl px-4 py-2 text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white">
@@ -32,10 +31,8 @@ export function Header() {
         </div>
       </div>
 
-      {/* Main nav */}
       <div className="mx-auto max-w-7xl px-4">
         <div className="flex h-16 items-center justify-between">
-          {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
             <div className="flex h-9 w-9 items-center justify-center border border-metallic/40 bg-charcoal group-hover:border-red transition-colors">
               <span className="text-lg font-bold text-white tracking-tighter">P</span>
@@ -50,7 +47,6 @@ export function Header() {
             </div>
           </Link>
 
-          {/* Desktop nav */}
           <nav className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
               <Link
@@ -63,7 +59,6 @@ export function Header() {
             ))}
           </nav>
 
-          {/* Icons */}
           <div className="flex items-center gap-3">
             <button
               aria-label="Search"
@@ -90,7 +85,6 @@ export function Header() {
               )}
             </Link>
 
-            {/* Mobile menu button */}
             <button
               className="lg:hidden p-2 text-metallic hover:text-white"
               onClick={() => setMobileOpen(!mobileOpen)}
@@ -102,7 +96,6 @@ export function Header() {
         </div>
       </div>
 
-      {/* Mobile menu */}
       <div
         className={cn(
           "lg:hidden overflow-hidden transition-all duration-300 border-t border-border",
