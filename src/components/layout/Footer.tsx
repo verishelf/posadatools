@@ -5,6 +5,7 @@ const shopLinks = [
   { href: "/collections/power-tools", label: "Power Tools" },
   { href: "/collections/batteries-chargers", label: "Batteries & Chargers" },
   { href: "/collections/accessories", label: "Accessories" },
+  { href: "/dealers", label: "Find a Dealer" },
 ];
 
 const companyLinks = [
