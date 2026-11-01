@@ -11,7 +11,7 @@ const navLinks = [
   { href: "/collections/power-tools", label: "Power Tools" },
   { href: "/collections/batteries-chargers", label: "Batteries & Chargers" },
   { href: "/collections/accessories", label: "Accessories" },
-  { href: "/distributors", label: "Distributors" },
+  { href: "/dealers", label: "Find a Dealer" },
   { href: "/about", label: "About Us" },
 ];
 
