@@ -5,10 +5,13 @@
 | File | Description |
 |------|-------------|
 | [POSADA_PT-RCH-EXT_QA_MVP.md](./POSADA_PT-RCH-EXT_QA_MVP.md) | QA MVP specification for OEM/ODM supplier discussions |
+| [POSADA_PT-RCH-EXT_Golden_Sample_Approval_Form.md](./POSADA_PT-RCH-EXT_Golden_Sample_Approval_Form.md) | Golden sample evaluation & sign-off form |
 
-Use this package when:
-- Issuing RFQs to factories in China or other regions
-- Aligning on samples, AQL, and certification path
-- Running pilot lot and mass-production release
+### Suggested order of use
 
-A PDF version can be generated from the markdown or requested for offline distribution.
+1. Issue **QA MVP** with RFQ / NDA to shortlisted factories.
+2. Receive engineering samples → iterate.
+3. Receive formal golden samples → complete **Golden Sample Approval Form**.
+4. If **Approved** (or conditions closed) → pilot lot → mass production.
+
+PDF copies of these forms can be generated for wet-ink or scan-back signing.
