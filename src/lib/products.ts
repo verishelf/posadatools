@@ -149,6 +149,59 @@ export const products: Product[] = [
     createdAt: "2025-02-20T00:00:00Z",
   },
   {
+    id: "posada-extended-electric-ratchet",
+    slug: "posada-extended-electric-ratchet",
+    name: "POSADA Extended Electric Ratchet",
+    shortDescription:
+      "20V cordless extended-reach electric ratchet for tight engine bays and confined fastening work.",
+    description:
+      "The POSADA Extended Electric Ratchet is built for mechanics and technicians who need powered fastening in hard-to-reach spaces. An extended head and slim profile reach deep into engine compartments and equipment frames, while the 20V motor delivers steady torque without the fatigue of a hand ratchet. Variable speed trigger, forward/reverse control, and compatibility with the POSADA 20V battery system make it a practical addition to any professional kit.",
+    category: "power-tools",
+    categoryLabel: "Power Tools",
+    images: [
+      {
+        src: "/images/products/electric-ratchet.svg",
+        alt: "POSADA Extended Electric Ratchet",
+      },
+    ],
+    variants: [
+      {
+        id: "ratchet-tool-only",
+        name: "Tool Only",
+        sku: "PT-RCH-EXT-TO",
+        price: 15900,
+        stock: 20,
+      },
+      {
+        id: "ratchet-with-battery",
+        name: "With 2.0Ah Battery",
+        sku: "PT-RCH-EXT-B",
+        price: 20900,
+        stock: 14,
+      },
+    ],
+    features: [
+      "Extended head for deep reach in confined spaces",
+      "Variable speed trigger for controlled fastening",
+      "Forward and reverse control",
+      "3/8 in square drive",
+      "Slim profile for engine bay access",
+      "Compatible with POSADA 20V battery system",
+      "LED work light",
+    ],
+    specifications: {
+      Voltage: "20V",
+      Drive: "3/8 in square",
+      "Head Style": "Extended reach",
+      Weight: "Approx. 2.6 lbs (tool only)",
+      "No-Load Speed": "0–220 RPM (approx.)",
+      Motor: "Brushed",
+    },
+    included: ["Extended electric ratchet", "Operator manual"],
+    featured: true,
+    createdAt: "2026-11-01T00:00:00Z",
+  },
+  {
     id: "posada-20v-battery",
     slug: "posada-20v-battery-pack",
     name: "POSADA 20V Battery Pack",
