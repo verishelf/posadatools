@@ -5,6 +5,9 @@ import { Product, ProductCategory } from "@/types/product";
  * These are demonstration products for the POSADA TOOLS storefront.
  * Prices, specifications, and stock levels are illustrative only.
  * Replace with real manufacturer data before production use.
+ *
+ * Images: SVG placeholders live in public/images/products/.
+ * Replace with real JPGs/PNGs using the same base filename when ready.
  */
 export const products: Product[] = [
   {
@@ -18,7 +21,7 @@ export const products: Product[] = [
     categoryLabel: "Power Tools",
     images: [
       {
-        src: "/images/products/drill-driver.jpg",
+        src: "/images/products/drill-driver.svg",
         alt: "POSADA 20V Cordless Drill Driver",
       },
     ],
@@ -66,7 +69,7 @@ export const products: Product[] = [
     categoryLabel: "Power Tools",
     images: [
       {
-        src: "/images/products/impact-driver.jpg",
+        src: "/images/products/impact-driver.svg",
         alt: "POSADA Brushless Impact Driver",
       },
     ],
@@ -115,7 +118,7 @@ export const products: Product[] = [
     categoryLabel: "Power Tools",
     images: [
       {
-        src: "/images/products/circular-saw.jpg",
+        src: "/images/products/circular-saw.svg",
         alt: "POSADA Cordless Circular Saw",
       },
     ],
@@ -156,7 +159,7 @@ export const products: Product[] = [
     categoryLabel: "Batteries & Chargers",
     images: [
       {
-        src: "/images/products/battery.jpg",
+        src: "/images/products/battery.svg",
         alt: "POSADA 20V Battery Pack",
       },
     ],
@@ -209,7 +212,7 @@ export const products: Product[] = [
     categoryLabel: "Batteries & Chargers",
     images: [
       {
-        src: "/images/products/charger.jpg",
+        src: "/images/products/charger.svg",
         alt: "POSADA Dual-Port Battery Charger",
       },
     ],
@@ -248,7 +251,7 @@ export const products: Product[] = [
     categoryLabel: "Power Tools",
     images: [
       {
-        src: "/images/products/tool-kit.jpg",
+        src: "/images/products/tool-kit.svg",
         alt: "POSADA Heavy-Duty Tool Kit",
       },
     ],
@@ -296,7 +299,7 @@ export const products: Product[] = [
     categoryLabel: "Accessories",
     images: [
       {
-        src: "/images/products/bit-set.jpg",
+        src: "/images/products/tool-kit.svg",
         alt: "POSADA Impact Bit Set",
       },
     ],
@@ -335,7 +338,7 @@ export const products: Product[] = [
     categoryLabel: "Accessories",
     images: [
       {
-        src: "/images/products/tool-bag.jpg",
+        src: "/images/products/tool-kit.svg",
         alt: "POSADA Heavy-Duty Tool Bag",
       },
     ],
