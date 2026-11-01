@@ -10,6 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/collections/power-tools",
     "/collections/batteries-chargers",
     "/collections/accessories",
+    "/dealers",
     "/distributors",
     "/suppliers",
     "/partners",
